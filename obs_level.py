@@ -13,7 +13,7 @@ def script_update(settings):
     global level_cap 
     level_cap = obs.obs_data_get_int(settings, "level_cap")
  
-
+##
 
 
 def create_image(section : str,  text: str):

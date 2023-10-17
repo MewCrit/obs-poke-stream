@@ -3,7 +3,7 @@ import os
 from PIL import Image, ImageDraw, ImageFont
  
 fainted = 0 
-
+##
 
 def script_description():
     return "Define you nuzlocke runs fainted pokemon."
