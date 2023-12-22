@@ -135,7 +135,6 @@ def get_pokemon_by_id(id : int):
 
     response = requests.get(f'{pokemon_species_url}/{id}')
  
-
     if response.status_code == 200:
         pokemon = response.json() 
 
@@ -145,14 +144,11 @@ def get_pokemon_by_id(id : int):
         if params.art_style == '' :
             versions = sprite['versions']
             pkmn_image = ImagePokemonBuilder(id, versions, params.generation, "", params.is_shiny).if_generation_one().if_generation_two().if_generation_three().if_generation_four().if_generation_five().if_generation_six().build()
-            
-           
 
     status_ok = 200
     response = {"status_code" : status_ok, "data" : APIResponse(species, pkmn_image._image).to_dictionary()}
 
     return jsonify(response), status_ok
-
 
 
 
