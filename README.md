@@ -131,15 +131,13 @@ https://pokeapi.co/
    ```
    python poke_api.py
    ```
-
+- You can also use poke_api_simple to use Pokemon original image or Pokemon Go 3d images instead
+- Run
+  ```
+  python poke_api_simple.py
+  ```
 
 
 <br/>
-
-TODO:
-
-- add gen 7, 8 and 9
-- level cap display
-
 
 
