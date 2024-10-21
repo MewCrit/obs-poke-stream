@@ -14,8 +14,6 @@ def script_update(settings):
     attempt_count = obs.obs_data_get_int(settings, "attempt")
  
 
-
-
 def create_image(section : str,  text: str):
     img = Image.new('RGBA', (280, 100), (0, 0, 0, 0))
 
